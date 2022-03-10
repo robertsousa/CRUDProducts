@@ -16,5 +16,10 @@ namespace CRUDProducts
         {
             InitializeComponent();
         }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
