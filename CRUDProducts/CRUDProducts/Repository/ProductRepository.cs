@@ -15,8 +15,25 @@ namespace CRUDProducts.Repository
         {
             using (CRUDContext context = new CRUDContext())
             {
-                context.Products.Add(product);
-               // context.Entry(product).State = EntityState.Modified;
+                context.Products.Add(product);               
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public Product SelectProduct(int id)
+        {
+            using (CRUDContext context = new CRUDContext())
+            {
+                return context.Products.SingleOrDefault(p => p.Id == id);
+            }
+        }
+
+        public async void UpdateProduct(Product product)
+        {
+            using (CRUDContext context = new CRUDContext())
+            {
+                context.Products.Attach(product);
+                context.Entry(product).State = EntityState.Modified;
                 await context.SaveChangesAsync();
             }
         }

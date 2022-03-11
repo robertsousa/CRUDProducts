@@ -58,5 +58,28 @@ namespace CRUDProducts
             formCreate.ShowDialog();
             _ = LoadDataGridAsync();
         }
+
+        
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if(DgvProducts.SelectedRows.Count > 0)
+            {
+                ProductRepository repository = new ProductRepository();
+
+                int idProduct = Convert.ToInt32(DgvProducts.SelectedRows[0].Cells[0].Value);
+
+                Product product = repository.SelectProduct(idProduct);
+
+                FormUpdate formUpdate = new FormUpdate(product);
+                formUpdate.ShowDialog();
+
+                _ = LoadDataGridAsync();
+            }
+            else
+            {
+                MessageBox.Show("Please select a row.", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

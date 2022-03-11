@@ -45,10 +45,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(141, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 26);
+            this.label1.Size = new System.Drawing.Size(193, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add new Product";
             // 
@@ -63,6 +63,7 @@
             // 
             // txbDescription
             // 
+            this.txbDescription.AcceptsTab = true;
             this.txbDescription.Location = new System.Drawing.Point(76, 80);
             this.txbDescription.Name = "txbDescription";
             this.txbDescription.Size = new System.Drawing.Size(373, 20);
@@ -79,10 +80,11 @@
             // 
             // txbCode
             // 
+            this.txbCode.AcceptsTab = true;
             this.txbCode.Location = new System.Drawing.Point(76, 54);
             this.txbCode.Name = "txbCode";
             this.txbCode.Size = new System.Drawing.Size(100, 20);
-            this.txbCode.TabIndex = 2;
+            this.txbCode.TabIndex = 1;
             this.txbCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -96,10 +98,11 @@
             // 
             // txbPrice
             // 
+            this.txbPrice.AcceptsTab = true;
             this.txbPrice.Location = new System.Drawing.Point(76, 106);
             this.txbPrice.Name = "txbPrice";
             this.txbPrice.Size = new System.Drawing.Size(100, 20);
-            this.txbPrice.TabIndex = 2;
+            this.txbPrice.TabIndex = 3;
             this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
@@ -113,38 +116,42 @@
             // 
             // txbQuantity
             // 
+            this.txbQuantity.AcceptsTab = true;
             this.txbQuantity.Location = new System.Drawing.Point(349, 106);
             this.txbQuantity.Name = "txbQuantity";
             this.txbQuantity.Size = new System.Drawing.Size(100, 20);
-            this.txbQuantity.TabIndex = 2;
+            this.txbQuantity.TabIndex = 4;
             this.txbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSave
             // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(202, 145);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 25);
-            this.btnSave.TabIndex = 3;
+            this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(283, 145);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 25);
-            this.btnClear.TabIndex = 4;
+            this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(364, 145);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 25);
-            this.btnCancel.TabIndex = 5;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
