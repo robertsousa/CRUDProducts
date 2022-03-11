@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace CRUDProducts.View
 {
-    internal class ProductView
+    public class ProductView
     {
+        public int ID { get; set; }
+        public string Code { get; set; }
+        public string Description { get; set; }
+        public string Price { get; set; }
+        public string Quantity { get; set; }
     }
 }
