@@ -1,4 +1,5 @@
-﻿using CRUDProducts.Model;
+﻿using CRUDProducts.Forms;
+using CRUDProducts.Model;
 using CRUDProducts.Repository;
 using CRUDProducts.View;
 using System;
@@ -49,6 +50,13 @@ namespace CRUDProducts
         private void lblExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            FormCreate formCreate = new FormCreate();
+            formCreate.ShowDialog();
+            _ = LoadDataGridAsync();
         }
     }
 }

@@ -63,6 +63,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCreate.Designer.cs">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202203111229377_Migration Initial.cs" />
     <Compile Include="Migrations\202203111229377_Migration Initial.designer.cs">
       <DependentUpon>202203111229377_Migration Initial.cs</DependentUpon>
@@ -75,6 +81,9 @@
     <Compile Include="View\ProductView.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCreate.resx">
+      <DependentUpon>FormCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203111229377_Migration Initial.resx">
       <DependentUpon>202203111229377_Migration Initial.cs</DependentUpon>
