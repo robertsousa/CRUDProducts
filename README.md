@@ -1,6 +1,6 @@
 # CRUDProducts
 
-![Badge](https://img.shields.io/static/v1?label=STATUS&message=DESENVOLVENDO&color=Green)
+![Badge](https://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=Green)
 ##
 
 ### Descrição
