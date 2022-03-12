@@ -81,5 +81,24 @@ namespace CRUDProducts
                 MessageBox.Show("Please select a row.", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            if (DgvProducts.SelectedRows.Count > 0)
+            {
+                ProductRepository repository = new ProductRepository();
+
+                int idProduct = Convert.ToInt32(DgvProducts.SelectedRows[0].Cells[0].Value);
+
+                Product product = repository.SelectProduct(idProduct);
+
+                FormRead formRead = new FormRead(product);
+                formRead.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a row.", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
