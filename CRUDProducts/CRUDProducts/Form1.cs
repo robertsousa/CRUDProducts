@@ -126,5 +126,11 @@ namespace CRUDProducts
                 MessageBox.Show("Please select a row. ", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void lblSobre_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+        }
     }
 }
