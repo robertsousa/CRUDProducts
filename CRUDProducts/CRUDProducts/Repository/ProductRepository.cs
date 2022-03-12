@@ -15,7 +15,7 @@ namespace CRUDProducts.Repository
         {
             using (CRUDContext context = new CRUDContext())
             {
-                context.Products.Add(product);               
+                context.Entry(product).State = EntityState.Added;               
                 await context.SaveChangesAsync();
             }
         }
@@ -32,8 +32,16 @@ namespace CRUDProducts.Repository
         {
             using (CRUDContext context = new CRUDContext())
             {
-                context.Products.Attach(product);
                 context.Entry(product).State = EntityState.Modified;
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public async void DeleteProduct(Product product)
+        {
+            using (CRUDContext context = new CRUDContext())
+            {                
+                context.Entry(product).State = EntityState.Deleted;
                 await context.SaveChangesAsync();
             }
         }

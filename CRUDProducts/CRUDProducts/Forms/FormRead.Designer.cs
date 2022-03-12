@@ -63,6 +63,7 @@
             // lblCode
             // 
             this.lblCode.AutoSize = true;
+            this.lblCode.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCode.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblCode.Location = new System.Drawing.Point(115, 60);
@@ -84,6 +85,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblDescription.Location = new System.Drawing.Point(115, 86);
@@ -105,6 +107,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
+            this.lblPrice.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblPrice.Location = new System.Drawing.Point(115, 112);
@@ -126,6 +129,7 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblQuantity.Location = new System.Drawing.Point(115, 138);

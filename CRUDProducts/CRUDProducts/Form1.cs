@@ -100,5 +100,31 @@ namespace CRUDProducts
                 MessageBox.Show("Please select a row.", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(DgvProducts.SelectedRows.Count > 0)
+            {
+                ProductRepository productRepository = new ProductRepository();
+                
+                int IdProductToRemove = Convert.ToInt32(DgvProducts.SelectedRows[0].Cells[0].Value);
+
+                Product product = productRepository.SelectProduct(IdProductToRemove);
+
+                var result = MessageBox.Show("Do you really want to delete this item?", "Deleting...", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+               
+                if (result == DialogResult.OK)
+                {
+                    productRepository.DeleteProduct(product);
+                    MessageBox.Show("Item deleted...","Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    _ = LoadDataGridAsync();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row. ", "Select", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
